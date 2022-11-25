@@ -21,3 +21,12 @@ Remaining
 
 
 
+ --> Flow of Redux
+
+    - user trigger
+      - Action is->Dispatched->with state and action-> to reducer -> update state -> and view
+
+
+
+
+

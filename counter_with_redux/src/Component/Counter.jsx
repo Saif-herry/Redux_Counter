@@ -10,10 +10,16 @@ const Counter = ()=>{
             <div>
             Counter: {count}
             </div>
-            <button onClick={()=>dispatch(increamentCounter())}>+</button>
+            <button onClick={()=>dispatch(increamentCounter(1))}>Increment by 1</button>
            
-            <button onClick={()=>dispatch(decreamentCounter())}>-</button>
+            <button onClick={()=>dispatch(decreamentCounter(1))}>Decrement by 1</button>
+            <div>
+        <button onClick={()=>dispatch(increamentCounter(5))}>Increment by 5</button>
+       
+        <button onClick={()=>dispatch(decreamentCounter(10))}>Decrement by 10</button>
+    </div>
         </div>
+        
     )
 }
 
