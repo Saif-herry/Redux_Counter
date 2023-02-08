@@ -1,6 +1,6 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { add_number, multiply_number, substract_number } from "../Redux/action";
+import { add_number, division_number, multiply_number, substract_number } from "../Redux/action";
 
 const Counter = ()=>{
   const {count} = useSelector((state)=>state)
@@ -19,7 +19,7 @@ const Counter = ()=>{
   }
 
   const division = () => {
-    dispatch()
+    dispatch(division_number(2))
   }
 
     return(
